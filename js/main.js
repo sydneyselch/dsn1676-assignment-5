@@ -1,17 +1,14 @@
-var $item = $('.item');
+var $list = $('.list');
 var $form = $('form');
-var $input = $('item');
+var $input = $('input');
 
-$form.on('submit', function (eventObject){
-    $eventObject.preventDefault());
-    $list.css('background-color', $input.val());
+$form.on('submit', function ($eventObject){
+    $eventObject.preventDefault();
     
-    var $theH2 = $('<h2>');
-    $theH2.html($input.val());
-    
-     $item.html($theH2)
+    var $theLi = $('<li>');
+    $theLi.html($input.val());
      
-     $list.append($theH2)
+     $list.append($theLi)
      
      $input.val('');
     
