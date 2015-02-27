@@ -8,7 +8,7 @@ $form.on('submit', function ($eventObject){
     var $theLi = $('<li>');
     $theLi.html($input.val());
      
-     $list.append('<li>' + $input.val() + '<a href="">x</a></li>' )
+     $list.prepend('<li>' + $input.val() + '<a href="">x</a></li>' )
      
      $input.val('');
     
@@ -18,5 +18,14 @@ $list.on('click', 'a', function (e) {
     e.preventDefault();
     $(this).parent().remove();
 });
+
+$list.on('click', 'li', function (e) {
+    e.preventDefault();
+    $(this).css('opacity', function(i,o){
+        return parseFloat(o).toFixed(1) === '0.8' ? 1 : 0.6;
+    });
+});
+
+
 
     
