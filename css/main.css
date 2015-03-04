@@ -1,3 +1,7 @@
+html{
+    background-color:gray;   
+}
+
 .list {
     padding-left: 0;
     border: 1px solid #efefef;
@@ -8,6 +12,7 @@
 input {
     padding:1em;   
     width:200px;
+    outline-color: lightgray;
 }
 
 
@@ -33,7 +38,7 @@ li {
 }
 
 ul {
-     width:95%;
+     max-width:100%;
     margin: .5em auto 0;
 }
 
@@ -47,7 +52,6 @@ a {
 
 .center-page{
     margin: 0 auto 0;
-    margin-left: 50px;
     width: 100%;
     text-align: center;
     
@@ -55,7 +59,11 @@ a {
 
 .title {
     font-family: 'Helvetica', Helvetica, 'Arial', Arial, sans-serif;
-    font-weight: lighter;
-    letter-spacing: .3em;
+    letter-spacing: .25em;
     text-align: center;
+    color: white;
+}
+
+.strike{
+    text-decoration: line-through;
 }

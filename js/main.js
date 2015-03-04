@@ -21,6 +21,9 @@ $list.on('click', 'a', function (e) {
 
 $list.on('click', 'li', function (e) {
     e.preventDefault();
+    $(this).addClass('strike');
+
+
     $(this).css('opacity', function(i,o){
         return parseFloat(o).toFixed(1) === '0.4' ? 1 : 0.4;
     });
